@@ -2,7 +2,7 @@
 /* below I am calling all the different HTML elements that I have used in the page and describing how it should be rendered on screen within the {curly brackets}. */
 body {
     background: rgb(165, 210, 185);
-    color: rgb(38, 105, 79);
+    color: rgb(155, 202, 184);
 }
 
 h1 {
