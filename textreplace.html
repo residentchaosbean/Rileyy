@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- This announces to the machine that the file is written in HTML
+The index.html file is typically the landing page for a website on github pages (the platform we are going to use to host our websites), which then links to other pages (E.G aboutme.html or surfing.html). If you type your github URL into the browser the index.html page will display by default -->
+
+<!-- this is a comment, its not displayed on the page but you can use it to leave notes for youself/inquisitive visitors.-->
+
+<head> <!-- The head is where the page begins, here we give important instructons on how to display content contained on the page. -->
+    <link href="style.css" rel="stylesheet"> <!-- this links your HTML file to your style sheet, which gives instructions on how the page is displayed including; font, background, layout, favicon -->
+    <title> Welcome to my webpage </title> <!-- The title of your page will display in the tab. Fun fact the icon displayed in the tab is called a favicon. -->
+</head>
+<body> <!-- The body contains the majority of the content on the page, the bulk of your text, images, links, elements will all be located in here.-->
+    <h1>Welcome to my webpage</h1>
+
+
+    <p>Original <button id="swap1" onclick="swapper1()"><span id="id1">html</span></button> content.
+        Lorem Ipsum is <button id="swap2" onclick="swapper2()"><span id="id2">simply</span></button> dummy text of the printing and typesetting industry.
+            
+    </p>
+    <script>
+        function swapper1(){
+        // select the button and the div
+        let swap = document.getElementById("swap1");
+        let span = document.getElementById("id1");
+            
+        // define the function to change the HTML content
+        function changeContent1() {
+        span.innerHTML = "weird";
+        }
+            
+        // add event listener to the button
+        swap.addEventListener('click', changeContent1);
+        }
+
+        function swapper2(){
+            // select the button and the div
+        const swap = document.getElementById('swap2');
+        const span = document.getElementById('id2');
+            
+        // define the function to change the HTML content
+        function changeContent2() {
+        span.innerHTML = 'complicatedly';
+        }
+            
+        // add event listener to the button
+        swap.addEventListener('click', changeContent2);
+        }
+
+        </script>
+
+
+</body>
+<footer> <!-- The footer is a the end of the page, it's totally optional and typically contains a note about the last update, or a dis on your sworn enemy.-->
+    <p>Made with love by [your name here] &lt;3 </p>
+</footer>
