@@ -32,6 +32,23 @@ h4 {
     letter-spacing: 0.2cm;
 }
 
+button {
+    background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+
+.swapbuttonh4 {
+    color: hsl(33, 30%, 43%);
+    text-align: center;
+    word-spacing: 0.1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    letter-spacing: 0.2cm;
+}
+
 h5 {
     color:rgb(97, 24, 24);
     text-align: center;
