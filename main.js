@@ -1,12 +1,10 @@
     // Change button 1 - effecting cloud button and cloud span
     const arr1 = [];
-    arr1[1]="his";
+    arr1[1]="";
 
     //second array for chain reactions
     const arr4 = [];
-    arr4[0]="burning sulphur";
-    arr4[1]="hands";
-    arr4[2]="drag";
+    arr4[0]="";
     // i begins at 1 so that the first button click changes from 0 to 1.
     let i = 1; 
     
