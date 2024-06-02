@@ -101,9 +101,9 @@ function replace1() {
 
 
 <!-- stanza 2 ~ AKA breath-->
-<h2> <span id="breathT">t</span><span id="breath1">a</span><span id="breath2">k</span><span id="breath3">e</span> <span id="breath4">d</span><span id="breath5">e</span><span id="breath6">e</span><span id="breath7">p</span> <span id="breath8">b</span><span id="breath9">r</span><span id="breath10">e</span><span id="breath11">a</span><span id="breath12">t</span><span id="breathH">h</span><span id="breathE">e</span> <span id="breathS">s</span><span id="breathe2">e</span><span id="breath13">a</span></h2>
+<h2> t<span id="breath1">a</span><span id="breath2">k</span><span id="breath3">e</span> <span id="breath4">b</span><span id="breath5">r</span><span id="breath6">e</span><span id="breath7">a</span><span id="breath8">t</span>h <span id="breath9">d</span>e<span id="breath10">e</span><span id="breath11">p</span> se<span id="breath12">a</span></h2>
 <!--T H E SE-->
-<h2> <span id="breathD">d</span><span id="breath14">a</span><span id="breathR">r</span><span id="breath15">k</span> <span id="breath16">g</span><span id="breath17">r</span><span id="breathE3">e</span><span id="breath18">y</span> <span id="breath19">e</span><span id="breathA">a</span><span id="breath20">t</span><span id="breath21">s</span><span id="breathM">m</span><span id="breath22">e</span> <span id="breathS1">s</span><span id="breath23">e</span><span id="breath24">e</span></h2>
+<h2> d</span><span id="breath13">a</span>r<span id="breath14">k</span> <span id="breath16">g</span><span id="breath17">r</span><span id="breathE3">e</span><span id="breath18">y</span> <span id="breath19">e</span><span id="breathA">a</span><span id="breath20">t</span><span id="breath21">s</span> <span id="breathM">m</span><span id="breath22">e</span> <span id="breathS1">s</span><span id="breath23">e</span><span id="breath24">e</span></h2>
 <!--DR E A M S-->
 <h2> <span id="breathW">a</span>w<span id="breath25">a</span><span id="breath26">t</span><span id="breath27">c</span><span id="breath28">h</span> <span id="breathI">i</span><span id="breath29">t</span> <span id="breathL">L</span><span id="breath30">i</span><button id="breathbutton" onclick="replace2()">n</button><span id="breath31">g</span><span id="breath32">e</span><span id="breath33">r</span> <span id="breathL1">l</span><span id="breath34">o</span><span id="breath35">o</span><span id="breath36">k</span></h2>
 <!--W I L L-->
@@ -171,26 +171,12 @@ function replace2() {
     var breathH = document.getElementById("breathH");
     var breathE = document.getElementById("breathE");
     var breathS = document.getElementById("breathS");
-    var breathE1 = document.getElementById("breathE1");
-    var breathD = document.getElementById("breathD");
-    var breathR = document.getElementById("breathR");
-    var breathE2 = document.getElementById("breathE2");
-    var breathA = document.getElementById("breathA");
-    var breathM = document.getElementById("breathM");
-    var breathS1 = document.getElementById("breathS1");
-    var breathW = document.getElementById("breathW");
-    var breathI = document.getElementById("breathI");
-    var breathL = document.getElementById("breathL");
-    var breathL1 = document.getElementById("breathL1");
-    var breathR = document.getElementById("breathR");
-    var breathU = document.getElementById("breathU");
-    var breathI1 = document.getElementById("breathI1");
-    var breathN = document.getElementById("breathN");
-    var breathM1 = document.getElementById("breathM1");
-    var breathE3 = document.getElementById("breathE3");
 
-    if (breathbutton.innerHTML === "n") {//changed
-        breathbutton.innerHTML = "";//changed
+    if (skinbutton.innerHTML === "n") {
+        skinbutton.innerHTML = "his";
+        setTimeout(()=> {
+            skin1.innerHTML = "burning sulphur";
+        }, Math.floor(Math.random() * (maxTimer - minTimer + 1) + minTimer));
             breathT.innerHTML= "T";
             breathH.innerHTML= "H";
             breathE.innerHTML= "E";
